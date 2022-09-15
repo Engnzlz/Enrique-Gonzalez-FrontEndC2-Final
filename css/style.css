@@ -467,6 +467,10 @@ footer{
     border-radius: 30px;
     height: 40px;
 }
+.update input::placeholder{
+    color: #232851;
+    font-style: italic;
+}
 .update button{
     color: white;
     width: 90px;
@@ -487,7 +491,7 @@ footer{
         background-color: #1E1E26;
         align-items: center;
         justify-content: center;
-        height: 30%;
+        height: 600px;
     }
     .redes{
         order: 3;
@@ -497,12 +501,13 @@ footer{
     }
     .redes img{
         margin: 2px 16px;
+        width: 25px;
     }
     .redes .logo{
-        width: 200px;
+        width: 190px;
         display: block;
         position: absolute;
-        bottom: 25px;
+        bottom: 50px;
         right: 30%;
     }
     .menu{
@@ -526,6 +531,7 @@ footer{
         color: #3F4868;
     }
     .update{
+        margin-top: 30px;
         width: 80%;
         order: 1;
     }
@@ -543,5 +549,6 @@ footer{
     position: absolute;
     bottom: 1px;
     text-align: center;
+    margin-top: 50px;
     }
 }
