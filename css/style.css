@@ -1,9 +1,7 @@
 *{
 box-sizing: border-box;
 margin: 0;
-padding: 0;
-border: solid red 0.3px;
-}
+padding: 0;}
 body{
     font-family: 'Be Vietnam Pro', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -13,13 +11,13 @@ body{
 header{
     width: 100%;
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
     flex-wrap: wrap;
 }
 header img{
     width: 200px;
-    margin-left: 6rem;
+    margin: 20px;
 }
 header button{
     margin-right: 6rem;
@@ -27,6 +25,7 @@ header button{
 nav{
     display: inline-flex;
     align-items: center;
+    margin: 20px;
     gap: 20px;
 }
 nav i{
@@ -51,25 +50,36 @@ button{
     font-weight: lighter;
     justify-content: center;
     align-items: center;
-    margin-right: 20px;
+    margin: 20px;
+    border: none;
 }
-@media (max-width:790px){
+button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+@media (max-width:480px){
     header{
-        justify-content: center;
-        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
     }
     header img{
-        width: 300px;
-        margin-right: 6rem;
-
+        display: block;
+        width: 200px;
+        margin-bottom: 0px;
     }
     header button{
-        margin-left: 6rem;
+    visibility: hidden;
     }
     nav{
+        visibility: hidden;
     }
     nav i{
+        position: absolute;
+        right: 20px;
+        top: 25px;
         visibility: visible;
+        font-size: 2rem;
     }
     nav a{
     visibility: hidden;
@@ -83,7 +93,7 @@ button{
     position: relative;
     width: 100%;
     display: inline-flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 1rem;
     margin-top: 4rem;
 
@@ -99,14 +109,43 @@ button{
     width: 70%;
     margin-bottom: 10px;
 }
+.btc1{}
 .graficos img{
     width: 100%;
     display: inline-flex;
     margin-bottom: 1rem;
-
 }
 .tex1{
     width: 30rem;
+}
+@media (max-width:480px){
+    .contenedor1{
+        margin-top: 0px;
+        justify-content: center;
+    }
+    .contenedor1 h1{
+        text-align: center;
+        font-size: 3rem;
+    }
+    .contenedor1 p{
+        text-align: center;
+        margin-left: 15%;
+    }
+    .graficos img{
+        margin-bottom: 100px;
+
+    }
+    .tex1{
+        margin-bottom: 100px;
+        order: 2;
+    }
+    .tex1 p{
+        width: 80%;
+        margin: 0px 40px 0px 40px;
+    }
+    .btc1{
+        margin-left: 32%;
+    }
 }
 .contenedor2 {
     width: 100%;
@@ -120,12 +159,12 @@ button{
     width: 30rem;
 }
 .primerparrafo h2{
-    font-size: 2rem;
+    font-size: 4rem;
     color: #232851;
 }
 .primerparrafo p{
-    margin-top: 2rem;
-    font-size: 1.1rem;
+    margin-top: 3rem;
+    font-size: 1.5rem;
 }
 
 .lista{
@@ -141,17 +180,93 @@ button{
     width: 90px;
     display:inline-block;
     font-weight: bold;
+    border: none;
 }
 .lista h3{
     display:inline-block;
 }
 .lista p{
-    padding: 8px;
+    padding: 5px;
     text-align: left;
     display: inline-block;
     color: #B3B2B7;
     margin-left: 7rem;
 }
+@media (max-width:480px){
+    .contenedor2 {
+        width: 100%;
+        justify-content: space-around;
+        display: inline-flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .primerparrafo{
+        display: inline-block;
+        width: 30rem;
+        padding: 15px;
+        margin-bottom: 100px;
+    }
+    .primerparrafo h2{
+        font-size: 2rem;
+        color: #232851;
+    }
+    .primerparrafo p{
+        margin-top: 2rem;
+        font-size: 1.1rem;
+    }
+    .lista{
+    margin-left: 20px;
+    margin-bottom: 100px;
+    
+    }
+    .listtext{
+        position: relative;
+        display: block;
+        text-align: center;
+    
+    }
+    .listtext button{
+        width: 90px;
+        position: absolute;
+        left:-20px;
+        top: -20px;
+        height: 40px;
+    }
+    .listtext h3{
+        background-color: #8B48BF4D;
+        display:inline-block;
+        width: 90%;
+        height: 40px;
+        font-size: 1rem;
+        margin-right: -44px;
+        align-items: center;
+        padding-left: 60px;
+        padding-top: 10px;
+        text-align: justify;
+    }
+    .listtext p{
+        margin-left: 0px;
+        font-size: 0.9rem;
+        margin: 20px 6px;
+        line-height: 25px;
+    }
+    .contenedor3{
+        width: 100%;
+        justify-content: space-around;
+        display: inline-flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+    }
+    .contenedor3 h2{
+        width: 100%;
+        text-align: center;
+        color: #242E53;
+        font-size: 2.5rem;
+        margin-bottom: 4rem;
+    }
+    
+    }
 .contenedor3{
     width: 100%;
     justify-content: space-around;
@@ -191,47 +306,93 @@ button{
     padding: 20px;
     color: #B3B2B7;
 }
+.people1{
+    border-radius: 5px;
+    background-color: #FAFAFA;
+    position: relative;
+    display: inline-block;
+    width: 25rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.people1 img{
+    width: 6rem;
+    position: absolute;
+    top: -50px;
+    right: 37%;
+}
+.people1 h3{
+    color: #3F4868;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+.people1 p{
+    padding: 20px;
+    color: #B3B2B7;
+}
 .buttondown{
     margin-top: 2rem;
     display: flex;
     justify-content: center;
     position: relative;
     width: 100%;
+    border: none;
 }
 .buttondown :hover{
     opacity: 70%;
     cursor: pointer;
     transform: scale(1.2);
 }
-@media (max-width: 790px){
+@media (max-width: 480px){
+    .contenedor3{
+        position: relative;
+        height: 450px;
+    }
     .people{
         margin-bottom: 3rem;
+        visibility: hidden;
+    }
+    .people1{
+        margin-bottom: 3rem;
+        position: absolute;
+        top: 130px;
+    }
+    .buttondown{
+        position: absolute;
+        bottom: -15px;
     }
 }
 .contenedor4{
     background-color: #8B48BF;
     width: 100%;
-    height: 15rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: ;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 .contenedor4 h2{
     color: white;
     font-size: 2.5rem;
     font-weight: 400;
-    width: 40%;
-    margin-left: 10%;
+    width: 50%;
+    margin: 50px
+
 }
 .contenedor4 button{
+    width: 150px;
     background-color: white;
     opacity: 100%;
     color: #8B48BF;
-    margin-right: 10%;
+    margin: 50px;
+    border: none;
 }
-@media (max-width:790px){
+.contenedor4 button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+@media (max-width:480px){
     .contenedor4{
         display: block;
         align-items: center;
@@ -240,12 +401,11 @@ button{
     .contenedor4 h2{
         width: 350px;
         display: flex;
-        margin-left: 25%;
+        margin-left: 7%;
     }
     .contenedor4 button{
-        margin-top: 2rem;
         display: flex;
-        margin-left: 40%;
+        margin-left: 30%;
 }
 }
 footer{
@@ -258,8 +418,8 @@ footer{
     flex-wrap: wrap;
 }
 .redes{
-    margin-left: 6rem;
-    width: 20%;
+    margin: 20px;
+    width: 280px;
     justify-content: center;
     text-align: center;
     flex-direction: row;
@@ -280,88 +440,108 @@ footer{
     width: 40%;
     display:block;
     flex-wrap: wrap;
+    margin: 20px;
 }
 .navfooter{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .navfooter :hover{
     color: #3F4868;
 }
 .navfooter a{
     text-align: center;
-    display: flex;
-    width: 10rem;
+    width: 11rem;
     color: white;
-    display: block;
 }
 .update{
-    justify-content: end;
+    justify-content: center;
     display: inline-flex;
-    width: 25%;
-    margin-right: 6rem;
+    align-items: center;
+    width: 250px;
+    flex-wrap: wrap;
 }
 .update input{
+    width: 90%;
     border-radius: 30px;
-    width: 15rem;
+    height: 40px;
 }
 .update button{
     color: white;
     width: 5rem;
     margin-left: 1rem;
+    border: none;
 }
-@media (max-width:790px){
+.copy{
+    margin-top: 30px;
+    text-align: end;
+    font-size: 0.8rem;
+    color: #8C8C94;
+    display: block;
+    width: 98%;
+}
+@media (max-width:480px){
     footer{
         width: 100%;
         background-color: #1E1E26;
         align-items: center;
         justify-content: center;
-        height: 500px;
+        height: 30%;
     }
     .redes{
-        width: 70rem;
+        order: 3;
+        width: 80%;
         justify-content: center;
-        text-align: center;
-        margin-right: 6rem;
+        margin-bottom: 5rem;
     }
     .redes img{
-        display: inline-block;
-        width: 2rem;
+        margin: 2px 16px;
     }
     .redes .logo{
-        width: 100%;
+        width: 200px;
+        display: block;
+        position: absolute;
+        bottom: 25px;
+        right: 30%;
     }
     .menu{
+        order: 2;
         display: block;
         width: 80%;
-        flex-wrap: wrap;
     }
     .navfooter{
-        justify-content: center;
         display: flex;
         flex-wrap: wrap;
-    }
-    .navfooter :hover{
-        color: #8B48BF;
+        width: 90%;
+        justify-content: left;
     }
     .navfooter a{
-        text-align: center;
-        width: 60%;
+        font-size: 0.89em;
+        width: 44%;
         visibility: visible;
         color: white;
     }
+    .navfooter :hover{
+        color: #3F4868;
+    }
     .update{
-        width: 20rem;
-        margin-left: 6rem;
+        width: 80%;
+        order: 1;
     }
     .update input{
+        margin: 10px;
         border-radius: 30px;
-        width: 15rem;
+        width: 12rem;
+        padding-left: 6px;
     }
     .update button{
         color: white;
-        width: 5rem;
-        margin-left: 1rem;
+        width: 4rem;
+        margin: 10px;}
+    .copy{
+    position: absolute;
+    bottom: 1px;
+    text-align: center;
     }
 }
