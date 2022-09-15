@@ -11,7 +11,7 @@ body{
 header{
     width: 100%;
     display: inline-flex;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     flex-wrap: wrap;
 }
@@ -93,7 +93,7 @@ button:hover{
     position: relative;
     width: 100%;
     display: inline-flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 1rem;
     margin-top: 4rem;
 
@@ -368,7 +368,7 @@ button:hover{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: ;
+    justify-content:center;
     align-items: center;
     margin-top: 2rem;
 }
@@ -413,7 +413,7 @@ footer{
     width: 100%;
     height: 20%;
     background-color: #1E1E26;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -459,17 +459,17 @@ footer{
     justify-content: center;
     display: inline-flex;
     align-items: center;
-    width: 250px;
+    width: 350px;
     flex-wrap: wrap;
 }
 .update input{
-    width: 90%;
+    width: 200px;
     border-radius: 30px;
     height: 40px;
 }
 .update button{
     color: white;
-    width: 5rem;
+    width: 90px;
     margin-left: 1rem;
     border: none;
 }
