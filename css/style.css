@@ -425,6 +425,9 @@ footer{
     flex-direction: row;
     align-items: flex-start;
 }
+.redes a :hover{
+    transform: scale(1.3);
+}
 .redes img{
     display: inline-flex;
     width: 2rem;
